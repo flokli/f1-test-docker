@@ -6,3 +6,4 @@ all: image
 image:
 	@echo ${NAME}:${REV}
 	docker build -t andir/${NAME}:${REV} .
+	docker push andir/${NAME}:${REV}
