@@ -1,4 +1,4 @@
-FROM python:latest
+FROM python:3.4
 RUN pip install --upgrade pip
 RUN apt-get update && apt-get install -y nodejs npm gettext
 RUN ln -s /usr/bin/nodejs /usr/bin/node
